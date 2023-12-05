@@ -45,7 +45,11 @@ void initialize() {
  * the robot is enabled, this task will exit.
  */
 void disabled() {
-	
+	addrled.set_pixel(0xFF0000,1);
+	while (true) {
+		addrled.cycle(*addrled, 10);
+	}
+
 }
 
 /**
