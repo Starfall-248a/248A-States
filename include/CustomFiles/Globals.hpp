@@ -30,3 +30,5 @@ pros::Imu inertial_sensor(2); // port 2
 // Cata limit switch
 pros::ADIDigitalIn Catalimit('A'); // 3 Wire slot a, limit switch
 
+// Create an addrled object
+auto addrled = sylib::Addrled(1,5,64);

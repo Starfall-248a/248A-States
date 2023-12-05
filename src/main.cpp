@@ -2,6 +2,7 @@
 #include "lemlib/api.hpp"
 #include "CustomFiles/DriveOdomConst.hpp"
 
+
 // 
 bool auto_started = false;
 bool blocka = false;
@@ -89,8 +90,6 @@ void autonomous() {
  * task, not resume it from where it left off.
  */
 void opcontrol() {
-	// Create an addrled object
-    auto addrled = sylib::Addrled(1,1,64);
  
     // Set the LED strip to a gradient in HSV color space
     // that displays a full range of hues

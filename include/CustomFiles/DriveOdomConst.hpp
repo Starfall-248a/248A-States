@@ -26,7 +26,7 @@ lemlib::TrackingWheel back_tracking_wheel(
 lemlib::OdomSensors sensors{
 	nullptr, // vertical tracking wheel 1, set to nullptr as we don't have one
     nullptr, // vertical tracking wheel 2, set to nullptr as we don't have one
-    &brot, // horizontal tracking wheel 1
+    &back_tracking_wheel, // horizontal tracking wheel 1
     nullptr, // horizontal tracking wheel 2, set to nullptr as we don't have a second one
     &inertial_sensor // inertial sensor
 };
