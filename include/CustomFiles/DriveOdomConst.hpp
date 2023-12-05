@@ -11,7 +11,7 @@ lemlib::Drivetrain drivetrain {
 	11.3, // track width
 	2.75, // wheel diameter
 	450, // wheel rpm
-	10, //chase power
+	8, //chase power
 };
 
 // tracking wheels
