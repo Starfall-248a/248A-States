@@ -23,12 +23,12 @@ lemlib::TrackingWheel back_tracking_wheel(
 );
 
 // odometry struct
-lemlib::OdomSensors sensors {
-	nullptr, // vertical tracking wheel 1
-	nullptr, // vertical tracking wheel 2
-	&brot, // horizontal tracking wheel 1
-	nullptr, // we don't have a second tracking wheel, so we set it to nullptr
-	&inertial_sensor // inertial sensor
+lemlib::OdomSensors sensors{
+	nullptr, // vertical tracking wheel 1, set to nullptr as we don't have one
+    nullptr, // vertical tracking wheel 2, set to nullptr as we don't have one
+    &brot, // horizontal tracking wheel 1
+    nullptr, // horizontal tracking wheel 2, set to nullptr as we don't have a second one
+    &inertial_sensor // inertial sensor
 };
 
 // Chassis constructor
